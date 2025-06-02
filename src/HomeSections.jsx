@@ -209,11 +209,48 @@ export default function HomeSections() {
           <p className="text-base md:text-xl text-center mb-6 md:mb-10 text-gray-900">
             Our <span className="font-bold italic">MD Sandeep Sharma</span> get awarded from <span className="font-bold italic">Isha Deol</span> and after attend press conference in Delhi.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            <img src={Blog1} alt="Blog 1" className="w-full h-48 md:h-72 object-cover rounded-3xl shadow-xl border-4 border-gray-100 hover:scale-105 hover:shadow-2xl transition-all duration-300" />
-            <img src={Blog2} alt="Blog 2" className="w-full h-48 md:h-72 object-cover rounded-3xl shadow-xl border-4 border-gray-100 hover:scale-105 hover:shadow-2xl transition-all duration-300" />
-            <img src={Blog3} alt="Blog 3" className="w-full h-48 md:h-72 object-cover rounded-3xl shadow-xl border-4 border-gray-100 hover:scale-105 hover:shadow-2xl transition-all duration-300" />
-          </div>
+         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+ 
+  <div className="flex flex-col items-center">
+    <img
+      src={Blog1}
+      alt="Blog 1"
+      className="w-full h-48 md:h-72 object-cover rounded-3xl shadow-xl border-4 border-gray-100 hover:scale-105 hover:shadow-2xl transition-all duration-300"
+    />
+    <span className='font-semibold'> Sandeep With Isha Deol. &nbsp;
+    <Link to="/BlogOne" className="mt-3 text-black-200 font-light hover:underline transition duration-200">
+  Read More
+</Link></span>
+  </div>
+
+ 
+  <div className="flex flex-col items-center">
+    <img
+      src={Blog2}
+      alt="Blog 2"
+      className="w-full h-48 md:h-72 object-cover rounded-3xl shadow-xl border-4 border-gray-100 hover:scale-105 hover:shadow-2xl transition-all duration-300"
+    />
+    <span className='font-semibold'> Sandeep With Isha Deol. &nbsp;
+    <Link to="/BlogOne" className="mt-3 text-black-200 font-light hover:underline transition duration-200">
+  Read More
+</Link> </span>
+  </div>
+
+
+  <div className="flex flex-col items-center">
+    <img
+      src={Blog3}
+      alt="Blog 3"
+      className="w-full h-48 md:h-72 object-cover rounded-3xl shadow-xl border-4 border-gray-100 hover:scale-105 hover:shadow-2xl transition-all duration-300"
+    />
+    <span className='font-semibold'>  Press Conference at Delhi. &nbsp;
+
+    <Link to="/BlogThree" className="mt-3 text-black-200 font-light hover:underline transition duration-200">
+  Read More
+</Link> </span>
+  </div>
+</div>
+
         </div>
       </div>
     </div>

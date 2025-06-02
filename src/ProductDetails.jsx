@@ -279,15 +279,16 @@ export default function ProductDetails() {
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-[500px] object-contain"
+               className="w-full md:w-[700px] h-[500px] object-contain"
             />
-            <div className="absolute top-4 right-4 flex gap-2">
-              <button className="p-2 bg-white rounded-full shadow-md hover:bg-gray-100 transition-colors">
-                <HeartIcon className="w-6 h-6 text-gray-600" />
+            <div className="absolute top-4 right-12 flex gap-2">
+               <button className="p-1 bg-white rounded-full shadow-md hover:bg-gray-100 transition-colors">
+                <ShareIcon className="w-4 h-4 text-gray-700" />
               </button>
-              <button className="p-2 bg-white rounded-full shadow-md hover:bg-gray-100 transition-colors">
-                <ShareIcon className="w-6 h-6 text-gray-600" />
+              <button className="p-1 bg-white rounded-full shadow-md hover:bg-gray-100 transition-colors">
+                <HeartIcon className="w-4 h-4 text-gray-700" />
               </button>
+             
             </div>
           </div>
         </div>

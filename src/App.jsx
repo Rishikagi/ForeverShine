@@ -9,9 +9,17 @@ import CarCare from './CarCare'
 import HomeCare from './HomeCare'
 import PersonalCare from './PersonalCare'
 import AboutUs from './AboutUs'
+import ComingSoon from './ComingSoon'
 import ProductDetails from './ProductDetails'
+import Privacy from './Privacy'
 import Cart from './Cart'
 import Account from './Account'
+import ShipingPolicy from './ShipingPolicy'
+import BlogOne from './BlogOne'
+import BlogThree from './BlogThree'
+import Login from './Login'
+import SignUp from './SignUp'
+
 import SearchResults from './SearchResults'
 import { CartProvider } from './context/CartContext'
 import { SearchProvider } from './context/SearchContext'
@@ -24,12 +32,7 @@ const Contact = () => (
   </div>
 );
 
-const Shipping = () => (
-  <div className="max-w-4xl mx-auto px-4 py-12">
-    <h1 className="text-3xl font-bold mb-8">Shipping Policy</h1>
-    <p className="text-gray-600">Shipping policy content coming soon...</p>
-  </div>
-);
+
 
 const Returns = () => (
   <div className="max-w-4xl mx-auto px-4 py-12">
@@ -45,12 +48,7 @@ const FAQ = () => (
   </div>
 );
 
-const Privacy = () => (
-  <div className="max-w-4xl mx-auto px-4 py-12">
-    <h1 className="text-3xl font-bold mb-8">Privacy Policy</h1>
-    <p className="text-gray-600">Privacy policy content coming soon...</p>
-  </div>
-);
+
 
 const Terms = () => (
   <div className="max-w-4xl mx-auto px-4 py-12">
@@ -66,8 +64,10 @@ const Cookies = () => (
   </div>
 );
 
+
 function App() {
   return (
+    
     <CartProvider>
       <SearchProvider>
         <BrowserRouter>
@@ -81,6 +81,7 @@ function App() {
                 <Footer />
               </>
             } />
+           
             <Route path="/car-care" element={
               <>
                 <Navbar />
@@ -109,6 +110,20 @@ function App() {
                 <Footer />
               </>
             } />
+            <Route path="/Login" element={
+              <>
+                <Navbar />
+                <Login />
+                <Footer />
+              </>
+            } />
+            <Route path="/SignUp" element={
+              <>
+                <Navbar />
+                <SignUp />
+                <Footer />
+              </>
+            } />
             <Route path="/product/:productId" element={
               <>
                 <Navbar />
@@ -130,6 +145,13 @@ function App() {
                 <Footer />
               </>
             } />
+            <Route path="/Coming-Soon" element={
+              <>
+                <Navbar />
+                <ComingSoon />
+                <Footer />
+              </>
+            } />
             <Route path="/search" element={
               <>
                 <Navbar />
@@ -145,10 +167,10 @@ function App() {
                 <Footer />
               </>
             } />
-            <Route path="/shipping" element={
+            <Route path="/Shiping-Policy" element={
               <>
                 <Navbar />
-                <Shipping />
+                <ShipingPolicy />
                 <Footer />
               </>
             } />
@@ -180,12 +202,27 @@ function App() {
                 <Footer />
               </>
             } />
+             <Route path="/BlogOne" element={
+              <>
+                <Navbar />
+                <BlogOne/>
+                <Footer />
+              </>
+            } />
+             <Route path="/BlogThree" element={
+              <>
+                <Navbar />
+                <BlogThree/>
+                <Footer />
+              </>
+            } />
             <Route path="/cookies" element={
               <>
                 <Navbar />
                 <Cookies />
                 <Footer />
               </>
+              
             } />
           </Routes>
         </BrowserRouter>

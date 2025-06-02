@@ -4,6 +4,7 @@ import { ShoppingCartIcon, HeartIcon, ShareIcon, UserIcon, BookmarkIcon, Magnify
 import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from './context/CartContext';
 import { useSearch } from './context/SearchContext';
+import ComingSooon from "./ComingSoon";
 
 export default function Navbar() {
   const { getCartCount } = useCart();
@@ -82,6 +83,7 @@ export default function Navbar() {
           <li className="hover:text-teal-700 hover:underline underline-offset-8 transition-all duration-200 cursor-pointer">
             <Link to="/about-us">About us</Link>
           </li>
+          
         </ul>
 
         {/* Mobile Menu */}
@@ -239,12 +241,16 @@ export default function Navbar() {
             <UserIcon className="w-5 h-5 md:w-6 md:h-6 align-middle" />
           </Link>
 
-          <button
-            onClick={() => alert('Wishlist feature coming soon!')}
-            className="hidden md:flex items-center justify-center hover:text-teal-700 hover:bg-teal-200/60 rounded-full p-2 transition-all duration-200 shadow-sm"
-          >
-            <BookmarkIcon className="w-5 h-5 md:w-6 md:h-6 align-middle" />
-          </button>
+          
+
+<Link
+  to="/Coming-Soon"
+  className="hidden md:flex items-center justify-center hover:text-teal-700 hover:bg-teal-200/60 rounded-full p-2 transition-all duration-200 shadow-sm"
+>
+  <BookmarkIcon className="w-5 h-5 md:w-6 md:h-6 align-middle" />
+</Link>
+
+
 
           <button
             onClick={() => {

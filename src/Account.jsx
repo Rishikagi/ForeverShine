@@ -1,4 +1,7 @@
 import React from 'react';
+import Login from './Login'
+import SignUp from './SignUp'
+import { Link } from 'react-router-dom';
 import { UserIcon } from '@heroicons/react/24/outline';
 
 export default function Account() {
@@ -10,6 +13,14 @@ export default function Account() {
             <UserIcon className="w-10 h-10 text-teal-600" />
           </div>
           <div>
+             <div className="mt-8 flex justify-end">
+              <Link to="/Login">
+          <button className="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors">
+            Login
+          </button> </Link>
+        </div>
+            
+          
             <h1 className="text-2xl font-bold text-gray-900">My Account</h1>
             <p className="text-gray-600">Welcome to your Forever Shine account</p>
           </div>
