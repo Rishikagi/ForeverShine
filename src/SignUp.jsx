@@ -48,7 +48,7 @@ export default function SignUp() {
  <div>
     <p className='w-full flex flex-col items-left'>If already registered...</p>
               <Link to="/Login">
-          <a className=" text-Black underlined px-6 py-2 hover:text-teal-700 justify-center transition-colors">
+          <a className=" text-Black underlined px-6 py-2 hover:text-teal-700 justify-center transition-colors w-full flex flex-col items-center">
             Login
           </a> </Link>
         </div>
