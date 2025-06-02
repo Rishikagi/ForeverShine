@@ -4,18 +4,17 @@ import Blog3 from './images/Blog3.jpg'
 import React from 'react';
 export default function BlogThree(){
     return(
-        <div className="max-w-4xl mx-auto px-4 py-12">
-    <h1 className="text-3xl font-bold mb-8">Our Blogs</h1>
-    <div className="min-h-screen bg-gray-50 py-8 px-2 md:px-8">
-        <img
+         <div className="max-w-4xl mx-auto px-4 py-12">
+          <h1 className="text-3xl font-bold mb-8 text-center">Our Blogs</h1>
+        
+          <div className="relative w-full h-[500px] bg-gray-100 rounded-2xl overflow-hidden">
+            <img
               src={Blog3}
               alt="Blog 3"
-              className="w-full h-48 md:h-72 object-cover rounded-3xl shadow-xl border-4 border-gray-100 hover:scale-105 hover:shadow-2xl transition-all duration-300"
+              className="absolute inset-0 w-full h-full object-cover"
             />
-
-        
-        </div>
-        <h3>Press conference at Delhi </h3>
+          </div>
+        <b><h3>Press conference at Delhi </h3></b>
  <p><span>by Admin </span> <span> Dec, 19, 2023 </span></p>
  <div>
     Introduction:
